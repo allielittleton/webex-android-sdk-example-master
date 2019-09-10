@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/heart_rate"
+        android:gravity="top">
+        <ImageButton
+            android:id="@+id/messageIcon"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="100dp"
+            android:background="@drawable/round_green"
+            android:elevation="5dp"
+            android:src="@android:drawable/stat_notify_chat" />
+        <ImageButton
+            android:id="@+id/callIcon"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_margin="100dp"
+            android:background="@drawable/round_pink"
+            android:elevation="5dp"
+            android:src="@android:drawable/stat_sys_phone_call" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/background_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:background="@drawable/details_background"/>
+
+
+</RelativeLayout>
